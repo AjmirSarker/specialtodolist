@@ -1,0 +1,22 @@
+.hero-section{
+    background-image: url('../../../public/Banner/one.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+    .color-black h1,p{
+        color: #0a0a09 !important;
+    }
+    .color-yellow{
+        color: rgb(184, 184, 2);
+        font-weight: bolder;
+        font-size: large;
+        font-style: italic;
+        text-decoration: none;
+    }
+    .color-yellow :hover{
+        color: #09090a;
+
+    }
