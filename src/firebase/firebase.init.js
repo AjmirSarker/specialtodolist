@@ -8,6 +8,12 @@ const firebaseConfig = {
   storageBucket:process.env.REACT_APP_storageBucket,
   messagingSenderId:process.env.REACT_APP_messagingSenderId,
   appId:process.env.REACT_APP_appId,
+  // apiKey: "AIzaSyDndLtwOkQtoFUxyBamu_f5Te6h0XQdMj8",
+  // authDomain: "to-do-list-d91fa.firebaseapp.com",
+  // projectId: "to-do-list-d91fa",
+  // storageBucket: "to-do-list-d91fa.appspot.com",
+  // messagingSenderId: "442345956796",
+  // appId: "1:442345956796:web:0fff17d9dfbd51ce6777b9"
  
 };
 

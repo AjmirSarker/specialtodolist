@@ -4,11 +4,16 @@ import './Header.css'
 // import logo from '../../../images/logo.png'
 import { Link } from 'react-router-dom';
 import CustomLink from './CustomLink';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase/firebase.init';
+import { signOut } from 'firebase/auth';
 
 
 const Header = () => {
-    const user ='arafat'
-    const handleSignOut=()=>{}
+  const [user] = useAuthState(auth);
+    const handleSignOut=()=>{
+      signOut(auth)
+    }
     return (
         <>
             <Navbar className="navbar" collapseOnSelect expand="lg" sticky="top">
@@ -28,9 +33,9 @@ const Header = () => {
              
             </Nav>
             <Nav className="navbar-link">
-              {user =='arafat' && (
+              {user  && (
                 <>
-                  <CustomLink className="nav-link fs-6 " to="/usertask" >Add User Task</CustomLink>
+                  <CustomLink className="nav-link fs-6 " to="/usertask" >User Task</CustomLink>
                  
                   
                 </>
